@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ryan Jakubielski">
+        <meta name="description" content="W3 Demo - Mainframes">
+        <title>Week 3 | Bio</title>
+
+        <!--In Document styling-->
+        <style>
+            /*we write css here*/
+
+            div {
+                border:1px solid black;
+                padding: 10px;
+                margin: 5px;
+            }
+
+            body {
+                background-color: grey;
+            }
+
+            #wrapper {
+                width: 900;
+                margin: auto;
+
+            }
+
+            .border {
+                border:1px solid blue;
+                margin-bottom:10px;
+
+            }
+
+            #nav {
+                border:1px solid red;
+                text-align:center;
+            }
+
+            .bg-main {
+                background-color: white;
+            }
+
+            .link {
+                font-size:26px;
+                width:200px;
+                text-decoration: none;
+                margin-right:15px;
+                background-color:black;
+                color:white;
+            }
+            
+            .link:hover {
+                background-color:white;
+                color:black;
+            }
+
+        </style>
+
+
+    </head>
+    <body>
+        <!--Wrapper - Holds the entire page content-->
+        <div id="wrapper" class="border">
+
+            <!--header - is content that loads first/at the top of the page-->
+            <div id="header" class="border bg-main">
+
+                <h1>HOME PAGE</h1>
+
+            </div><!--/ #header-->
+
+            <!--nav - holds links to internal pages-->
+            <div id="nav" class="border">
+
+                <a href="index.html" class="link">Home</a>
+                <a href="about.html" class="link">About</a>
+                <a href="schools.html" class="link">Schools</a>
+                <a href="hobbies.html" class="link">Hobbies</a>
+
+            </div><!--/ #nav-->
+
+            <!-- content - holds the main content of the page. Will be the only sectiomn that changes-->
+            <div id="content" class="border">
+                <h2>This is the Home page content</h2>
+
+            </div><!--/ #content-->
+
+            <!--footer - final section of the page-->
+            <div id="footer" class="border bg-main">
+                <a href="#">Back to Top</a>
+
+                <p>&copy; 2022, R Jakubielski | SE111.02</p>
+
+                <!--Image of validation goes here. 100% width-->
+            </div><!--/ #footer-->
+
+        </div><!--/ #wrapper-->
+    </body>
+</html>
