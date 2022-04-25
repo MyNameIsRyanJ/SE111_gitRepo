@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1 Bio Page</title>
+
+    <style>
+        .hide
+        {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1><strong>Ryan Jakubielski</strong></h1>
+    <hr>
+    <div id="nav">
+        <a href="#" id="bio_link">Bio</a>
+        <a href="#" id="edu_link">Education</a>
+        <a href="#" id="hobbies_link">Hobbies</a>
+        <a href="#" id="show_link">Show All</a>
+    </div>
+    <hr>
+    <div id="main">
+        <div id="bio">
+            <h2>My Bio</h2>
+            <img src="images/me.jpg&Maxw=1180&q=50" alt="Ryan Jakubielski and Sophia Duhig" width="25%">
+            <p>Hello my name is <i>Ryan Jakubielski</i> and this is my story. I was born and I live in Norwich C.T. I am employed at Vocaturas Bakery where I assist in making pizzas and grinders. I am an avid gamer who plays a wide array of video games from minecraft to Elden Ring. My favorite game of all time is Skyrim and my first ever game I loved was Halo Reach.</p>
+            <p>My other hobbies and interests include game development and programming. I have been programming sense the age of 8 with simple batch files then moving into the world of modding a few years later. My game development journey began a few years ago and i have completed a few small game projects but nothing major. I primarly used Unity and C#</p>
+            <hr>
+        </div>
+
+        <div id="edu">
+            <h2>Schooling</h2>
+            <ul>
+                <li>Saint Bernard High School</li>
+                <li>Three Rivers Community College</li>
+                <li><a href="https://www.neit.edu/" target="_blank">New England Institute of Technology</a></li>
+            </ul>
+            <hr>
+        </div>
+        
+        <div id="hobbies">
+            <h2><em>Things I do</em></h2>
+            <ol>
+                <li><b>Video Games</b></li>
+                <li>Programming</li>
+                <li>Game Development</li>
+            </ol>
+            <img src="images/halo.jpg" alt="Image.image" width="25%">
+            <hr>
+        </div>
+    </div>
+    <div id="footer">
+        <p>©2022 Ryan Jakubielski | W1 Assignment</p>
+    </div>
+    <hr>
+    <script>
+        var aLink = document.querySelector(`#bio_link`)
+        var bLink = document.querySelector(`#edu_link`)
+        var cLink = document.querySelector(`#hobbies_link`)
+        var dLink = document.querySelector(`#show_link`)
+
+        var bio = document.querySelector(`#bio`)
+        var edu = document.querySelector(`#edu`)
+        var hobbies = document.querySelector(`#hobbies`)
+
+        aLink.addEventListener(`click`, showBio)
+        function showBio(e)
+        {
+            e.preventDefault();
+            bio.classList.remove(`hide`)
+            edu.classList.add(`hide`)
+            hobbies.classList.add(`hide`)
+        }
+
+        bLink.addEventListener(`click`, showEdu)
+        function showEdu(e)
+        {
+            e.preventDefault();
+            bio.classList.add(`hide`)
+            edu.classList.remove(`hide`)
+            hobbies.classList.add(`hide`)
+        }
+
+        cLink.addEventListener(`click`, showHobbies)
+        function showHobbies(e)
+        {
+            e.preventDefault();
+            bio.classList.add(`hide`)
+            edu.classList.add(`hide`)
+            hobbies.classList.remove(`hide`)
+        }
+
+        dLink.addEventListener(`click`, showAll)
+        function showAll(e)
+        {
+            e.preventDefault();
+            bio.classList.remove(`hide`)
+            edu.classList.remove(`hide`)
+            hobbies.classList.remove(`hide`)
+        }
+    </script>
+</body>
+</html>
