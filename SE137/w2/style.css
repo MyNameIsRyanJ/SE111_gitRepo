@@ -1,0 +1,62 @@
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+        .hide
+        {
+            display: none;
+        }
+        div
+        {
+            border-bottom: 1px solid black;
+            border-top: 1px solid black;
+            padding: 5px;
+        }
+        html
+        {
+            padding: 0;
+            margin: 0;
+        }
+        body
+        {
+            padding: 0;
+            margin: 0;
+            background: rgb(255,255,255);
+            background: linear-gradient(180deg, rgba(255,255,255,1) 95%, rgba(255,0,0,1) 100%);
+        }
+        h1
+        {
+            padding: 0;
+            margin: 0;
+            font-family: 'Roboto Slab', serif;
+        }
+        a:link
+        {
+            color: red;
+        }
+        a:visted
+        {
+            color: red;
+        }
+        a:hover
+        {
+            color: rgb(99, 0, 0);
+        }
+        #title
+        {
+            display: inline;
+        }
+        #title2
+        {
+            display: inline;
+            color: red;
+            font-size: 2em;
+        }
+        h2
+        {
+            color: red;
+            font-family: 'Roboto Slab', serif;
+            text-align: center;
+        }
+        p, a, li
+        {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
